@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom'
 
 const Home = () => {
   return (
-    <div className='bg-gradient-to-b from-teal-900 to-blue-900 h-screen flex flex-col gap-5 max-lg:h-full justify-evenly'>
+    <div className='bg-gradient-to-b from-teal-900 to-blue-900 min-h-screen flex flex-col gap-5  justify-evenly'>
     <div className='flex flex-col items-center mt-2'>
     <div className='flex justify-center items-center'>
     <div className='border-double border-4 justify-center rounded-full h-16 w-16 flex items-center'>
