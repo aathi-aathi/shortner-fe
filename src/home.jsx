@@ -1,6 +1,5 @@
 import React from 'react'
 import URLForm from './url-form'
-import Register from './register'
 import { Outlet } from 'react-router-dom'
 
 const Home = () => {

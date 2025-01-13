@@ -7,7 +7,6 @@ import OTPVerification from "./otp-verify"
 import ProtectedRoute from "./protectedRoute"
 import UrlList from "./short-urls"
 
-
 function App() {
   return (
    <BrowserRouter>
@@ -18,7 +17,7 @@ function App() {
      <Route path="register" element={<Register/>}/>
      <Route path='otp-verify/:token' element={<OTPVerification/>}/>
     </Route>
-    <Route path="/urls" element={<ProtectedRoute component={<UrlList/>}/>}/>
+    <Route path="/urls" element={<UrlList/>}/>
    </Routes>
    </BrowserRouter>
   )

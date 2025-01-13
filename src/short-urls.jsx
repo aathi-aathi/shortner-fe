@@ -22,6 +22,7 @@ const UrlList = () => {
     useEffect(()=>{
         getList()
     },[])
+    
   return (
    <div className='bg-gradient-to-b from-teal-900 to-blue-900 min-h-screen flex justify-center'>
     {urls.length <1 ?<div className='pt-10 text-2xl text-slate-100 h-screen items-center justify-center flex flex-col '>

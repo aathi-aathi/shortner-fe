@@ -7,12 +7,12 @@ const URLForm = () => {
     const [shortUrl,setShortUrl]=useState('') 
     const [error,setError] = useState('')
     const [copied, setCopied] = useState('copy');
-    const [email,setEmail] =useState('')
+    let email;
     const token = localStorage.getItem('token')
     if(token){
       const decoded = jwtDecode(token)
-      setEmail(decoded.email)
-    }  
+      email = decoded.email
+    }
     const handleSubmit = async(e)=>{
         e.preventDefault()
         if(!longUrl){
